@@ -1,4 +1,8 @@
-# LTrace - Histograma de ocorrência de letras em C++
+# LTrace (1ª Parte) - Plugin de segmentação binária para o 3DSlicer
+
+A aplicação está disponível no arquivo "AssignmentFromLeo.zip" neste mesmo repositório.
+
+# LTrace (2ª Parte) - Histograma de ocorrência de letras em C++
 
 Esta aplicação consiste em contar a quantidade de ocorrências cada letra presente em um determinado arquivo txt.
 
