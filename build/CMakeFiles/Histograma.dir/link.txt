@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Histograma.dir/src/histograma.cpp.o -o Histograma 

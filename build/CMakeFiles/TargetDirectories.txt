@@ -1,0 +1,3 @@
+/home/leonardo/Documents/LTrace C++/build/CMakeFiles/Histograma.dir
+/home/leonardo/Documents/LTrace C++/build/CMakeFiles/edit_cache.dir
+/home/leonardo/Documents/LTrace C++/build/CMakeFiles/rebuild_cache.dir
