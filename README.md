@@ -17,12 +17,47 @@ Esta aplicação consiste em contar a quantidade de ocorrências de cada letra p
 - GNU Compiler Collection do tipo G++;
 - CMAKE versão 3.22.1 (para futuras versões).
 
-### Como executar
+Compatível com:
+- MSVC v19.24
+- GCC 9.2 
+- Clang 9.0.0.
 
-- Clone o repositório e vá para a pasta "src". Ao abrir o terminal nessa pasta, digite:
+### Como Compilar e Executar
+
+Clone o repositório:
+```
+git clone https://github.com/leonardogfrodrigues/ltrace.git
+```
+Acesse as pastas "ltrace/src/": 
+
+```
+cd ltrace/src/
+```
+
+**GCC 9.2**
+```
+gcc histograma.cpp -lstdc++ -o histogram
+```
+
+```
+./histogram ./COPYING/file.txt ./README/file.txt
+```
+
+**CLang**
+
+```
+clang++ -Wall -std=c++11 histograma.cpp -o
+```
+
+```
+./histograma ./COPYING/file.txt ./README/file.txt  
+```
+
+**G++**
 ```
 g++ histograma.cpp -o histograma
 ```
+
 ```
 ./histograma ./COPYING/file.txt ./README/file.txt  
 ```
