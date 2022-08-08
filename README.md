@@ -1,6 +1,6 @@
 # LTrace - Histograma de ocorrência de letras em C++
 
-Esta aplicação consiste em contar a quantidade da ocorrência de uma determinada letra em um arquivo txt.
+Esta aplicação consiste em contar a quantidade de ocorrências cada letra presente em um determinado arquivo txt.
 
 ## Requisições
 
