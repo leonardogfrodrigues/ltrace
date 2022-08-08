@@ -5,11 +5,12 @@ Esta aplicação consiste em contar a quantidade de ocorrências cada letra pres
 ## Requisições
 
 - C++ versão 11;
-- GNU Compiler Collection do tipo G++.
+- GNU Compiler Collection do tipo G++;
+- CMAKE versão 3.22.1 (para futuras versões).
 
 ## Como executar
 
-- Ao clonar o repositório, na pasta raíz do projeto, dentro do terminal, digite:
+- Clone o repositório e vá para a pasta "src". Ao abrir o terminal nessa pasta, digite:
 ```
 g++ histograma.cpp -o histograma
 ```
