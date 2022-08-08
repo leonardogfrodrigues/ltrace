@@ -1,4 +1,4 @@
-# Desafio LTrace - 
+# Desafio LTrace 
 
 ## Parte 1 - Plugin de segmentação em python para o 3DSlicer
 
