@@ -20,7 +20,7 @@ Esta aplicação consiste em contar a quantidade de ocorrências de cada letra p
 Compatível com:
 - MSVC v19.24
 - GCC 9.2 
-- Clang 9.0.0.
+- Clang 9.0.0
 
 ### Como Compilar e Executar
 
@@ -43,7 +43,7 @@ gcc histograma.cpp -lstdc++ -o histogram
 ./histogram ./COPYING/file.txt ./README/file.txt
 ```
 
-**CLang**
+**Clang**
 
 ```
 clang++ -Wall -std=c++11 histograma.cpp -o
