@@ -1,48 +1,58 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<iostream>
+#include <iostream>
+#include <fstream>
+#include <stdio.h>    
+#include <stdlib.h>    
 
 using namespace std;
 
-int main(int argc, char **argv){
-    /* buffer de contagem de caracteres entre 0,...,128; é inicializado
+struct CharInstance {
+    int count;
+    char letter;
+};
+
+int main(int argc, char **argv)
+{
+    char letter;
+    int i, j;
+    CharInstance temp;
+
+    /* buffer de contagem de caracteres entre 0,...,26; é inicializado
     com 0 em cada elemento */
-    int count[128] = { 0 };
+    CharInstance charInst[26] = { 0 };
 
-    /* contador */
-    int k;
+    // identificador de arquivo com argv definido como parâmetro para a leitura da lista de arquivos
+    for(int iterator=1; iterator < argc; iterator++){
+        ifstream file(argv[iterator]);
+        while (file >> letter) {
+            // Unificando letras maiúsculas e minúsculas para facilitar a contagem
+            if (letter >= 'a' && letter <= 'z') letter -= 32;
+        
+            if (letter < 'A' || letter > 'Z') continue; // ignorando caracteres que não são letras
 
-    for (int iterator=1; iterator < argc; iterator++)
-    {
-        int count[128] = { 0 };
-
-        int k;
-	    
-	    /* identificador de arquivo com argv definido como parâmetro para a leitura da lista de arquivos */
-        FILE *fp = fopen(argv[iterator], "r");
-
-        /* variável que percorrerá os caracteres */
-        int c;
-
-        /* obtendo os caracteres até o fim do arquivo... */
-        while((c=fgetc(fp))) {
-
-            if(c == EOF)
-                break;
-
-            /* caso não for o fim do arquivo, adicione 1 à contagem desse caractere específico */
-            count[c]+=1;
+            const int ind = letter - 'A';
+            ++charInst[ind].count;
+            charInst[ind].letter = letter;
         }
+        file.close();
+    
 
-        for(k=0; k<128; k++) {
-            if(count[k] > 0) {
-                cout<<(char)k<<" " <<(int)count[k]<<endl;
+        // bubble sort para definição do histograma
+        for (i = 0; i < 26; i++)
+        {
+            for (j = i + 1; j < 26; j++)
+            {
+                if (charInst[j].count > charInst[i].count)
+                {
+                    temp = charInst[i];
+                    charInst[i] = charInst[j];
+                    charInst[j] = temp;
+                }
             }
         }
-        /* fechando o arquivo */
-        fclose(fp);
-    }
 
+        for (i = 0; i < 26; i++) {
+            cout << charInst[i].letter << "-> " << charInst[i].count << "  " << endl;
+        }
+    }
     return 0;
 }
-
