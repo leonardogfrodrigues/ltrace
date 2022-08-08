@@ -1,14 +1,20 @@
-# LTrace - Histograma de ocorrência de letras em C++
+# Desafio LTrace - 
+
+## Parte 1 - Plugin de segmentação em python para o 3DSlicer
+
+Essa parte encontra-se no arquivo "AssignmentFromLeo.zip".
+
+## Parte 2 - Histograma de ocorrência de letras em C++
 
 Esta aplicação consiste em contar a quantidade de ocorrências cada letra presente em um determinado arquivo txt.
 
-## Requisições
+### Requisições
 
 - C++ versão 11;
 - GNU Compiler Collection do tipo G++;
 - CMAKE versão 3.22.1 (para futuras versões).
 
-## Como executar
+### Como executar
 
 - Clone o repositório e vá para a pasta "src". Ao abrir o terminal nessa pasta, digite:
 ```
