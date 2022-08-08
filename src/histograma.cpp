@@ -5,57 +5,44 @@
 using namespace std;
 
 int main(int argc, char **argv){
-    /* a buffer to hold the count of characters 0,...,256; it is
-     * initialized to zero on every element */
+    /* buffer de contagem de caracteres entre 0,...,128; é inicializado
+    com 0 em cada elemento */
     int count[128] = { 0 };
 
-    /* loop counter */
+    /* contador */
     int k;
-
-    
 
     for (int iterator=1; iterator < argc; iterator++)
     {
         int count[128] = { 0 };
 
-        /* loop counter */
         int k;
 	    
-	    /* file handle --- in this case I am parsing this source code */
+	    /* identificador de arquivo com argv definido como parâmetro para a leitura da lista de arquivos */
         FILE *fp = fopen(argv[iterator], "r");
 
-        /* a holder for each character (stored as int) */
+        /* variável que percorrerá os caracteres */
         int c;
 
-        /* for as long as we can get characters... */
+        /* obtendo os caracteres até o fim do arquivo... */
         while((c=fgetc(fp))) {
 
-            /* break if end of file */
             if(c == EOF)
                 break;
 
-            /* otherwise add one to the count of that particular character */
+            /* caso não for o fim do arquivo, adicione 1 à contagem desse caractere específico */
             count[c]+=1;
         }
 
-
-
         for(k=0; k<128; k++) {
             if(count[k] > 0) {
-                //printf("Valor de k: %d\n", count[k]);
                 cout<<(char)k<<" " <<(int)count[k]<<endl;
             }
         }
-        /* close the file */
+        /* fechando o arquivo */
         fclose(fp);
     }
 
-
-
-
-
-
-    /* that's it */
     return 0;
 }
 
