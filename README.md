@@ -53,7 +53,7 @@ clang++ -Wall -std=c++11 histograma.cpp -o
 ./histograma ./COPYING/file.txt ./README/file.txt  
 ```
 
-**G++**
+**G++ para MSVC**
 ```
 g++ histograma.cpp -o histograma
 ```
