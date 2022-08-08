@@ -1,14 +1,17 @@
 # Desafio LTrace 
+Leonardo Gabriel Ferreira Rodrigues
 
-## Parte 1 - Plugin de segmentação em python para o 3DSlicer
+leonardogfrodrigues@gmail.com
+__________________
+## :snake: Parte 1 - Plugin de segmentação em python para o 3DSlicer
 
-Essa parte encontra-se no arquivo "AssignmentFromLeo.zip".
+Disponível em: [AssignmentFromLeo.zip](https://github.com/leonardogfrodrigues/ltrace/blob/main/AssignmentFromLeo.zip)
+__________________
+## :bar_chart: Parte 2 - Histograma de ocorrência de letras em C++
 
-## Parte 2 - Histograma de ocorrência de letras em C++
+Esta aplicação consiste em contar a quantidade de ocorrências de cada letra presente em um determinado arquivo txt.
 
-Esta aplicação consiste em contar a quantidade de ocorrências cada letra presente em um determinado arquivo txt.
-
-### Requisições
+### :computer: Requisições
 
 - C++ versão 11;
 - GNU Compiler Collection do tipo G++;
